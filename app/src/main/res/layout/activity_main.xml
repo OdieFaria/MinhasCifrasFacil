@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:layout_weight="1.0"
+            android:id="@+id/lerCifra"
+            android:text="Carregar Cifra (txt)"
+            android:onClick="carregarCifra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:layout_weight="1.0"
+            android:id="@+id/menosTom"
+            android:text="(-) 1 T"
+            android:onClick="menosTom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_weight="1.0"
+            android:id="@+id/menosSemi"
+            android:text="(-) 1/2 T"
+            android:onClick="menosSemitom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_weight="1.0"
+            android:id="@+id/maisSemi"
+            android:text="(+) 1/2 T"
+            android:onClick="maisSemitom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_weight="1.0"
+            android:id="@+id/maisTom"
+            android:text="(+) 1 T"
+            android:onClick="maisTom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:typeface="monospace"
+            android:textSize="19dp"
+            android:gravity="top"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_border"
+            android:textColor="@drawable/edit_text_selector"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_weight="1.0"
+            android:id="@+id/textDesenvolvedor"
+            android:text="Desenvolvido por: Odirlei Faria - Dezembro de 2019"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
