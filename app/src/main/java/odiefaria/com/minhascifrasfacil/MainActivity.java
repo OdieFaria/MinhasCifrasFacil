@@ -27,8 +27,6 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
 
     private int PICK_IMAGE_REQUEST = 1;
-    private Spinner spinner1;
-    private Spinner spinner2;
     private TextView txtLer;
     private String chord;
     private String note;
